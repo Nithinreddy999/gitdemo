@@ -21,7 +21,7 @@ public class First {
             }
         }
         else{
-            System.out.println("No one");
+            System.out.println("No Lab");
         }
 
     }
