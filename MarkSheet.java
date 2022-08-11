@@ -16,16 +16,11 @@ public class MarkSheet {
         System.out.println("Percentage: "+percentage);
 
         //Second Iteration
-        total=0;
-        Marks.remove(1);
-        for(int position=0;position<Marks.size();position++){
-            total=total+Marks.get(position);
-        }
-        System.out.println("Which element u want to remove");
-        int Pos=sc.nextInt();
+        System.out.println("Select an element to remove");
+        int pos=sc.nextInt();
         try{
-            Marks.remove(Pos);
-            total=total-Marks.get(Pos);
+            Marks.remove(pos);
+            total=total-Marks.get(pos);
         }
         catch(Exception exception){
             System.out.println("Please give the valid position / give the position less than a Array Size");
