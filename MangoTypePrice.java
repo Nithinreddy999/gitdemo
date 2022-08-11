@@ -11,5 +11,16 @@ public class MangoTypePrice {
         {
             System.out.println("Type: "+iterator.getKey() + "Price "+iterator.getValue());
         }
+
+        HashMap<String,Double> mangoPrice = new HashMap<>();
+        mangoPrice.put("Alphonso",2.5);
+        mangoPrice.put("Banginapalli",4.0);
+        mangoPrice.put("Sindhura",1.5);
+        for(String iterator : mangoPrice.keySet()){
+            double price;
+            price=mangoData.get(iterator)*mangoPrice.get(iterator);
+            System.out.println("Price of "+iterator+" is "+price);
+        }
+        }
     }
-}
+
