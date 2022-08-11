@@ -1,5 +1,5 @@
 import java.util.*;
-public class MarkSheet {
+public class Marks {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         ArrayList<Integer> Marks = new ArrayList<>();
@@ -31,6 +31,5 @@ public class MarkSheet {
         percentage = (float)(total/(Marks.size()));
         System.out.println("Percentage: "+percentage);
         System.out.println("Percentage after removing an element: "+ (total/(Marks.size())));
-
     }
 }
